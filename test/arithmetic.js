@@ -83,7 +83,7 @@ describe('Arithmetic', function() {
               done();
           });
     });
-    it('adds an integer to a floating point number', function(done) {
+    it('adds an integer value to a floating point number', function(done) {
       request.get('/arithmetic?operation=add&operand1=2.5&operand2=-5')
           .expect(200)
           .end(function(err, res) {
